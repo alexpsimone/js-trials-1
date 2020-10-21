@@ -33,11 +33,22 @@ def get_odd_indices(items):
 
     # Alternate solution:
     # return [item for item in items[1::2]]
-    
+
     return [item for item in items if items.index(item) % 2 != 0]
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+    """Given an array, output a numbered list.
+    
+    >>> print_as_numbered_list([1, 'hello', True])
+    1. 1
+    2. hello
+    3. True
+    """
+
+    number = 1
+    for item in items:
+        print(f"{number}. {item}")
+        number += 1
 
 
 def get_range(start, stop):
