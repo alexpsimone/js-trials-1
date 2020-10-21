@@ -74,6 +74,14 @@ def censor_vowels(word):
     'h*ll* w*rld'
     """
 
+    # This alternate solution is "fancy" but harder to 
+    # understand at a glance, I think:
+    #
+    # newstring = ['*' if letter in 'aeiou' else letter for letter in word]
+    # return ''.join(newstring)
+
+    newstring = ''
+
     for letter in word:
         if letter in 'aeiou':
             newstring += '*'
