@@ -52,7 +52,19 @@ def print_as_numbered_list(items):
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+    """Return an array of numbers in a certain range.
+    
+    >>> get_range(0, 5)
+    [0, 1, 2, 3, 4]
+    
+    >>> get_range(1, 3)
+    [1, 2]
+
+    >>> get_range(6, 10)
+    [6, 7, 8, 9]
+    """
+
+    return [start + num for num in range(stop-start)]
 
 
 def censor_vowels(word):
